@@ -3,18 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .file-upload {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .file-upload input[type="file"] {
+            padding: 10px;
+        }
+        .file-upload button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .file-upload button:hover {
+            background-color: #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a mi página web</h1>
+        <h1>Mi Portafolio de Trabajos</h1>
     </header>
-    <main>
-        <p>¡Hola! Esta es una página creada usando GitHub Pages.</p>
-    </main>
-    <footer>
-        <p>Creado por Sergio García.</p>
-    </footer>
+    <div class="container">
+        <section class="file-upload">
+            <h2>Sube tu Trabajo</h2>
+            <form id="upload-form" action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="workFile" accept="image/*, .pdf, .doc, .docx, .pptx" required>
+                <button type="submit">Subir Trabajo</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Mis Trabajos</h2>
+            <div class="gallery">
+                <!-- Aquí se mostrarán las imágenes o documentos subidos -->
+                <img src="https://via.placeholder.com/300" alt="Trabajo 1">
+                <img src="https://via.placeholder.com/300" alt="Trabajo 2">
+                <!-- Añadir más imágenes según los trabajos subidos -->
+            </div>
+        </section>
+    </div>
 </body>
 </html>
+
