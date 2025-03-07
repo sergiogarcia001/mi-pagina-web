@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio García - Mis proyectos</title>
+    <title>Sergio García - Mis Proyectos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,26 +21,12 @@
             width: 80%;
             margin: 20px auto;
         }
-        .file-upload {
+        .section {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
-        }
-        .file-upload input[type="file"] {
-            padding: 10px;
-        }
-        .file-upload button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .file-upload button:hover {
-            background-color: #555;
         }
         .gallery {
             display: flex;
@@ -52,28 +38,72 @@
             max-width: 300px;
             border-radius: 8px;
         }
+        .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+        .projects-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            color: #555;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Mis Proyectos</h1>
     </header>
+
     <div class="container">
-        <section class="file-upload">
+        <!-- Introducción -->
+        <section class="section">
             <h2>Bienvenidos a Mi Página Personal</h2>
             <p>Esta página está diseñada para mostrar y organizar mis proyectos y trabajos. Aquí podrás ver los avances y resultados de mis estudios, trabajos y creaciones. A medida que avance en mis estudios, actualizaré los proyectos para mantener un espacio organizado y accesible.</p>
         </section>
 
-        <section>
-            <h2>Python</h2>
+        <!-- Proyectos en Python -->
+        <section class="section">
+            <h2>Proyectos en Python</h2>
             <div class="gallery">
-                <!-- Aquí se mostrarán las imágenes o documentos subidos -->
                 <img src="https://via.placeholder.com/300" alt="Trabajo 1">
                 <img src="https://via.placeholder.com/300" alt="Trabajo 2">
-                <!-- Añadir más imágenes según los trabajos subidos -->
             </div>
+        </section>
+
+        <!-- Más Proyectos -->
+        <section class="section">
+            <h2>Más Proyectos</h2>
+            <ul class="projects-list">
+                <li>📌 <strong>Automatización de Redes con Python</strong> - Script para configurar routers.</li>
+                <li>📌 <strong>Monitor de Tráfico</strong> - Dashboard para analizar el tráfico de red.</li>
+                <li>📌 <strong>Aplicación Web en Flask</strong> - Proyecto de una app con login y base de datos.</li>
+            </ul>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section contact">
+            <h2>Contacto</h2>
+            <p>Si quieres ponerte en contacto conmigo, aquí tienes mis redes:</p>
+            <a href="mailto:sergio@example.com">📧 Correo: sergio@example.com</a>
+            <a href="https://www.linkedin.com/in/sergiogarcia" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/sergiogarcia" target="_blank">🐙 GitHub</a>
         </section>
     </div>
 </body>
 </html>
+
 
