@@ -28,16 +28,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
         }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-        }
         .projects-list {
             list-style: none;
             padding: 0;
@@ -61,6 +51,54 @@
         .contact a:hover {
             color: #555;
         }
+        /* Estilos para las tarjetas de proyectos */
+        .project-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .project-card {
+            width: 32%;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-card h3 {
+            margin-top: 10px;
+        }
+        .project-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .project-card a:hover {
+            background: #0056b3;
+        }
+        /* Responsive: Ajustar en pantallas pequeñas */
+        @media (max-width: 900px) {
+            .project-card {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,37 +107,47 @@
     </header>
 
     <div class="container">
-        <!-- Introducción -->
         <section class="section">
             <h2>Bienvenidos a Mi Página Personal</h2>
             <p>Esta página está diseñada para mostrar y organizar mis proyectos y trabajos. Aquí podrás ver los avances y resultados de mis estudios, trabajos y creaciones. A medida que avance en mis estudios, actualizaré los proyectos para mantener un espacio organizado y accesible.</p>
         </section>
 
-        <!-- Proyectos en Python -->
-        <section class="section">
-            <h2>Proyectos en Python</h2>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/300" alt="Trabajo 1">
-                <img src="https://via.placeholder.com/300" alt="Trabajo 2">
+        <section class="section project-cards">
+            <div class="project-card">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Automatización de Redes con Python</h3>
+                <p>Script para configurar routers.</p>
+                <a href="https://github.com/tuusuario/proyecto1" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Monitor de Tráfico</h3>
+                <p>Dashboard para analizar el tráfico de red.</p>
+                <a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver en GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <img src="proyecto3.jpg" alt="Proyecto 3">
+                <h3>Aplicación Web en Flask</h3>
+                <p>Proyecto de una app con login y base de datos.</p>
+                <a href="https://github.com/tuusuario/proyecto3" target="_blank">Ver en GitHub</a>
             </div>
         </section>
 
-        <!-- Más Proyectos -->
         <section class="section">
             <h2>Más Proyectos</h2>
             <ul class="projects-list">
-                <li>📌 <strong>Automatización de Redes con Python</strong> - Script para configurar routers.</li>
-                <li>📌 <strong>Monitor de Tráfico</strong> - Dashboard para analizar el tráfico de red.</li>
-                <li>📌 <strong>Aplicación Web en Flask</strong> - Proyecto de una app con login y base de datos.</li>
+                <li> <strong>Automatización de Redes con Python</strong> - Script para configurar routers.</li>
+                <li> <strong>Monitor de Tráfico</strong> - Dashboard para analizar el tráfico de red.</li>
+                <li> <strong>Aplicación Web en Flask</strong> - Proyecto de una app con login y base de datos.</li>
             </ul>
         </section>
 
-        <!-- Contacto -->
         <section class="section contact">
             <h2>Contacto</h2>
             <p>Si quieres ponerte en contacto conmigo, aquí tienes mis redes:</p>
-            <a href="mailto:sergi2008gm@gmail.com">📧 Correo: sergi2008gm@gmail.com</a>
-            
+            <a href="mailto:sergi2008gm@gmail.com"> Correo: sergi2008gm@gmail.com</a>
         </section>
     </div>
 </body>
