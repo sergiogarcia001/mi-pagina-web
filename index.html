@@ -212,7 +212,7 @@
         <section class="section contact">
     <h2>Contacto</h2>
     <p>Si quieres ponerte en contacto conmigo, rellena el siguiente formulario:</p>
-    <form class="contact-form">
+    <form class="contact-form" <form class="contact-form" action="https://formspree.io/f/xoveayjv" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -220,7 +220,7 @@
         <input type="email" id="email" name="email" required>
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="4" required style="resize: none;"></textarea>
 
         <button type="submit">Enviar Mensaje</button>
     </form>
